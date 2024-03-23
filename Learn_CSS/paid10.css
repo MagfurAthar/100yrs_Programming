@@ -1,0 +1,33 @@
+/* #Image{
+    height: 400px;
+    width: 600px;
+    background-color: rgb(93, 173, 199);
+    margin: 0 auto;
+    background-image: url("Cycle.jpg");
+    background-size: cover;
+    color: brown;
+    text-align: center;
+} */
+.card{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 10px;
+    margin-top: 0px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px;
+    transition: 0.5s;
+}
+img{
+    width: 100%;
+    border-radius: 4px;
+}
+.desc{ 
+    /* padding-left: 3px;
+    padding-bottom: 3px; */
+    padding: 0 3px 0 3px;
+}
+.card:hover{
+    box-shadow: 10px 10px 16px;
+}

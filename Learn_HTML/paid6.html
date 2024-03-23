@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <button>Back</button>
+    <!-- No action will perform by this button -->
+    <form action="/action">
+        <!-- <label>
+            Username:
+            <input type="text" placeholder="Enter Username">
+        </label>
+        <br>
+        <label>
+            Password:
+            <input type="password" placeholder="Enter Password">
+        </label> 
+        <br> -->
+
+        <!-- ------------ -->
+       <div>
+        <label for="Username">Username : </label>
+        <input type="text" placeholder="Username" id="Username" name="query">
+       </div>
+       <div>
+        <label for="Password">Password : </label>
+        <input type="password" placeholder="Password" id="Password">
+       </div>
+        Phone-Number:
+        <input type="number" placeholder="Ph-no..."><br>
+        Color:
+        <input type="color"><br>
+        Date & Time:
+        <input type="datetime-local"><br>
+        <button type="submit">Submit</button>
+        <button type="button">Next</button>
+        <button type="reset">Clear</button>
+    </form>
+    <!-- name attribute//-> name=value -->
+    <!-- http://127.0.0.1:5500/action?query=Magfur -->
+    <hr>
+    <form action="https://www.youtube.com/results">
+        <input type="text" placeholder="Search in youtube" name="search_query">
+        <button>Search</button>
+        
+    </form>
+    <hr>
+    <form action="https://www.google.com/search">
+        <input type="text" placeholder="Search in google" name="q">
+        <button>Search</button>
+    </form>
+
+    
+</body>
+</html>

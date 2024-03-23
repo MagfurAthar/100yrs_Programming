@@ -1,0 +1,24 @@
+.container {
+    margin-top: 5%;
+    background-color: #EEF5FF;
+}
+
+.container h1 {
+    text-decoration: underline;
+    color: blue;
+}
+
+.collapse .navbar-nav .nav-item:hover {
+    color: white;
+    cursor: pointer;
+    background-color: #176B87;
+}
+
+.collapse .navbar-nav .nav-link:hover {
+    color: white;
+    cursor: pointer;
+    background-color: #176B87;
+}
+.container-md{
+    margin-bottom: 5%;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/server">
+        <!-- checkbox(by default checked) -->
+        <label for="age">Are you 18<sup>+</sup></label>
+        <input type="checkbox" id="age" name="age" checked><br>
+        <!-- radio button -->
+        <div>
+            <h3>Choose your favourite :</h3>
+            <label for="apple">Apple</label>
+            <input type="radio" name="fruit" value="apple">
+            <label for="banana">Banana</label>
+            <input type="radio" name="fruit1" value="banana">
+            <label for="mango">Mango</label>
+            <input type="radio" name="fruit2" value="mango">
+            <label for="govava">Govava</label>
+            <input type="radio" name="fruit3" value="govava"><br><br>
+        </div>
+        <div>
+            Choose your subjects:
+            <label for="dsa">DSA-></label>
+            <input type="checkbox" id="dsa" name="subjects" value="dsa">
+            <label for="coa">COA-></label>
+            <input type="checkbox" id="cao" name="subjects" value="coa">
+            <label for="dld">DLD</label>
+            <input type="checkbox" id="dld" name="subjects" value="dld">
+            <label for="C++">C++</label>
+            <input type="checkbox" id="C++" name="subjects" value="C++">
+        </div>
+        <!-- Select tag -->
+        <div>
+            Select your districs:
+            <select name="dist" id="dist">
+                <option>City</option>
+                <option value="ran" selected>Ranchi</option>
+                <option value="loh">Lohardaga</option>
+                <option value="gu">Gumla</option>
+                <option value="sim">Simdega</option>
+                <option value="pla">Plamu</option>
+                <option value="late">Latehar</option>
+                <option value="garh">Garhwa</option>
+                <option value="west">West Singhbhum</option>
+                <option value="sarai">Saraikela Kharsawan</option>
+                <option value="east">East Singhbhum</option>
+                <option value="dum">Dumka</option>
+                <option value="jam">Jamtara</option>
+                <option value="saheb">Sahebganj</option>
+                <option value="pakur">Pakur</option>
+                <option value="godda">Godda</option>
+                <option value="hazari">Hazaribagh</option>
+                <option value="chatra">Chatra</option>
+                <option value="koder">Koderma</option>
+                <option value="giri">Giridih</option>
+                <option value="dhan">Dhanbad</option>
+                <option value="boka">Bokaro</option>
+                <option value="deo">Deoghar</option>
+                <option value="ram">Ramgarh</option>
+            </select>
+        </div>
+        <!-- range -->
+        <div>
+            <label for="vol">Set the Volume : </label>
+            <input type="range" name="vol" id="vol" min="0" max="100" step="5" value="60">
+        </div>
+        <!-- textarea -->
+        <div>
+            Remarks:
+            <label for="tex"></label>
+            <textarea name="tex" id="tex" cols="30" rows="5" placeholder="Enter your remarks..."></textarea>
+        </div>
+        <br>
+        <button type="reset">Clear</button>&nbsp;&nbsp;&nbsp;
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

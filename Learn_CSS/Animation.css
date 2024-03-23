@@ -1,0 +1,106 @@
+.box1 {
+    background-color: rgba(231, 242, 157, 0.834);
+    height: 100px;
+    width: 300px;
+    margin: 0 auto;
+    animation-name: fontAnimation;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-direction: normal;
+    animation-iteration-count: 3;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 50px;
+    /* font-style: bold; */
+    box-shadow: 3px 3px  10px rgb(251, 160, 4);
+}
+
+.box2 {
+    background-color: rgb(255, 196, 0);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: solid;
+    animation-name: moveAnimation;
+    animation-duration: 6s;
+    /* animation: alternate; */
+    animation-delay: 1s;
+    animation-direction: normal;
+    animation-iteration-count: 3;
+    box-shadow: 1px 3px  30px rgb(230, 122, 40);
+    /* or, all in one------------------- */
+    /* animation: moveAnimation 3s ease-in 0s 2 normal; */
+}
+h1{
+    color: whitesmoke;
+    text-shadow: 3px 3px  10px red;
+    font-size: 50px;
+}
+.sun{
+    padding-top: 40%;
+}
+@keyframes moveAnimation {
+    from {
+        margin-right: 0%;
+       
+    }
+
+    to {
+        margin-left: 100%;
+
+    }
+}
+
+@keyframes fontAnimation {
+    from {
+        font-size: 20px;
+    }
+
+    to {
+        font-size: 60px;
+    }
+}
+/* ------or, using % we can make animations------ */
+/* @keyframes fontAnimation {
+    0% {
+        font-size: 20px;
+    }
+
+    50% {
+        font-size: 60px;
+    }
+    100%{
+        font-size: 80px;
+    }
+} */
+
+/* ---------------Media Query---------------- */
+/* @media (width: 400px){
+    h1{
+        text-shadow: 3px 3px  10px rgb(217, 255, 0);
+    }
+    body{
+        background-color: skyblue;
+    }
+} */
+@media (max-width: 400px){
+    body{
+        background-color: skyblue;
+    }
+}
+
+@media (max-width: 400px) and (min-width: 200px){
+    body{
+        background-color: rgb(17, 72, 94);
+    }
+}
+
+@media (orientation: landscape){
+    h1{
+        color: brown;
+        text-shadow: 3px 3px  10px rgb(217, 255, 0);
+    }
+}

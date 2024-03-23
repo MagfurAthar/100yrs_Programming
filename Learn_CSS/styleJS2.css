@@ -1,0 +1,11 @@
+.pColor{
+    color: red;
+}
+.h3Color{
+    color: blue;
+}
+.box{
+    background-color: pink;
+    border:2px solid black;
+    text-align: center;    
+}

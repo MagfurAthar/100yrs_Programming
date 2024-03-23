@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+    margin-top: 30px;
+}
+.bag-button{
+    background-color: rgb(89, 225, 89);
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.bag-button:hover{
+    background-color: rgb(59, 220, 59);
+    box-shadow: 2px 2px 6px gray;
+}
+.wish-button{
+    padding: 10px 40px 10px 40px;
+    border-radius: 15px;
+    border: 2.5px solid black;
+    font-size: large;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.wish-button:hover{
+    padding: 12.5px 42.5px 12.5px 42.5px;
+    border: none;
+    box-shadow: 2px 2px 6px gray;
+}
+#cart-summary{
+    font-size: 3rem;
+}

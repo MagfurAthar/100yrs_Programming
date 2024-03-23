@@ -1,0 +1,40 @@
+h3{
+    background-color: blueviolet;
+}
+div{
+    height: 350px;
+    width: 350px;
+    background-color: gray;
+    font-family: Tahoma;
+    border-color: black;
+    border-width: 2px;
+    border-style: double;
+    border-left-color: brown;
+    border-left-style: dotted;
+    padding: 30px;
+    border-radius: 10px 100px / 120px;
+    /* margin-top: 20px; */
+    margin-bottom: 30px;
+    /* border-top-right-radius: 30px; */
+    /* border-radius: 50%; */
+}
+h1{
+    /* border-width: 4px;
+    border-color: brown;
+    border-style: inset; */
+    /* shorthand--------- */
+    border: 4px brown inset;
+    font-family: Verdana;
+    /* border-radius: 10px 100px / 120px; */
+    border-radius: 10px;
+    margin: 0%;
+}
+button{
+    padding: 10px;
+    border-radius: 7px;
+    border-color: brown;
+    color: rgb(227, 32, 32);
+    background-color: rgb(63, 239, 251);
+    margin-left: 30px;
+    cursor: pointer;
+}

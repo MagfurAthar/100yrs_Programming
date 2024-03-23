@@ -1,0 +1,45 @@
+h1 {
+    text-align: center;
+    text-decoration: overline;
+    letter-spacing: 20px;
+    font-family: dodot, arial, avant garde;
+    /* border: solid; */
+    /* width: 50%; */
+}
+
+h2 {
+    text-align: end;
+    text-decoration: underline;
+    font-family: impact;
+    font-family: 'Amiri Quran', serif;
+    font-family: 'Aref Ruqaa Ink', serif;
+    font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+#Arabic {
+    text-align: end;
+    text-decoration: line-through;
+    line-height: 1.5;
+    /* line-height: normal; */
+}
+
+p {
+    text-align: justify;
+    font-family: 'Amiri Quran', serif;
+}
+
+hr {
+    color: brown;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Amiri Quran', serif;
+    font-family: 'Aref Ruqaa Ink', serif;
+    font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+div {
+    background-color: rgb(143, 201, 251);
+    /* background-color: inherit; */
+}

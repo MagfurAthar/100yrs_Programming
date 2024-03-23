@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greeting</title>
+    <style>
+      button {
+        height: 50px;
+        width: 50px;
+        font-size: 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:active {
+        opacity: 0.7;
+      }
+      .js-odd {
+        background-color: yellowgreen;
+      }
+      .js-even {
+        background-color: coral;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="Greeting"></h1>
+    <button id="my-button" onclick="btnClick()"></button>
+    <script>
+      let noOfButtonClicked = localStorage.getItem("noOfButtonClicked") || 0;
+      function btnClick() {
+        noOfButtonClicked++;
+        localStorage.setItem("noOfButtonClicked", noOfButtonClicked);
+        btnUpdate();
+      }
+      function Greeting(Person = "Dear") {
+        let date = new Date();
+        let hour = date.getHours();
+        let heading = document.querySelector("#Greeting");
+        if (hour > 5 && hour < 12) {
+          heading.innerText = `Good Morning ${Person}`;
+        } else if (hour > 12 && hour < 18) {
+          heading.innerText = `Good Afternoon ${Person}`;
+        } else {
+          heading.innerText = `Good Night ${Person}`;
+        }
+      }
+      Greeting();
+      function btnUpdate() {
+        let btn = document.querySelector("#my-button");
+        btn.innerText = noOfButtonClicked;
+        if (noOfButtonClicked % 2 === 0) {
+          btn.classList.remove("js-odd");
+          btn.classList.add("js-even");
+        } else {
+          btn.classList.remove("js-even");
+          btn.classList.add("js-odd");
+        }
+      }
+      btnUpdate();
+    </script>
+  </body>
+</html>

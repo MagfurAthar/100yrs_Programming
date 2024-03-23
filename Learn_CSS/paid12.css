@@ -1,0 +1,72 @@
+#Container{
+     /* height: 300px; */
+     height: 600px;
+     width: 80%;
+     /* width: 60%; */
+     border: black solid 2px;
+     background-color: azure;
+     margin: 10px auto;
+     /* ---flex-direction--- */
+     display: flex;
+     flex-direction: row;
+     /* flex-direction: column; */
+     justify-content: flex-start;
+     flex-wrap: nowrap;
+     /* flex-wrap: wrap; */
+     align-items: flex-start;
+     /* align-items: flex-end; */
+     /* align-content: flex-end; */
+     /* align-content: flex-start; */
+     /* align-content: center; */
+     /* align-content: space-between; */
+     /* align-content: space-around; */
+     /* align-content: space-evenly; */
+     /* align-content: baseline; */
+     
+     /* align-items: center; */
+     /* align-items: baseline; */
+     /* flex-wrap: wrap-reverse; */
+     /* justify-content: flex-end; */
+     /* justify-content: center; */
+     /* justify-content: space-between; */
+     /* justify-content: space-around; */
+     /* justify-content: space-evenly; */
+     /* flex-direction: row-reverse; */
+     /* flex-direction: column-reverse; */
+     /* flex-direction: column-reverse; */
+     /* flex-direction: initial; */
+}
+#Orange{
+    /* align-self: flex-end; */
+    align-self: baseline;
+    /* align-self: flex-start; */
+    /* align-self: center; */
+    /* flex-basis: 50px; */
+    /* flex-grow: 0.5; */
+    /* flex-grow: 1; */
+    /* flex-grow: 1; */
+
+    /* ---Flex Shorthand--- */
+    flex: 2 1 100px;
+}
+#Blue{
+    /* flex-basis: 400px; */
+    /* flex-grow: 0.3; */
+    /* flex-grow: 3; */
+    /* max-width: 400px; */
+    /* max-width: 400px; */
+    /* flex-shrink: 3; */
+    flex: 1 2 100px;
+}
+h1{
+    text-align: center;
+}
+#Container div{
+    /* height: 50px; */
+    height: 100px;
+    /* height: 20px; */
+    /* width: 300px; */
+    width: 100px;
+    text-align: center;
+    font-size: 1.5em;
+}

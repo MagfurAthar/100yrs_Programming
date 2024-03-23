@@ -1,0 +1,23 @@
+div{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    /* alpha channel */
+    background-color: rgba(54, 255, 54, 0.7);
+    /* transition: 1s; */
+    /* transition-delay: 1s; */
+    /* transition-duration: 2s; */
+    margin: 0 auto;
+    transition: margin-top 2s ease-in 0.2s;
+}
+.opacity{
+    height: 200px;
+    width: 200px;
+    background-color: rebeccapurple;
+    opacity: 0.8;
+}
+div:hover{
+    margin-top: 300px;
+    background-color: rgb(11, 138, 216, 0.5);
+    border-radius: 20px;
+}

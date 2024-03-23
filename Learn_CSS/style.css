@@ -1,0 +1,19 @@
+#clear{
+    background-color: rgb(240, 187, 187);
+    color: blue;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#submit{
+    background-color: rgb(2, 167, 250);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

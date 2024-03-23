@@ -1,0 +1,100 @@
+body {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size: 30px;
+    letter-spacing: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    cursor: pointer;
+    margin: 10px;
+    margin-top: 8px;
+    width: 200px;
+    height: 200px;
+    border-radius: 0px 0px 200px;
+    transition: 7ms;
+}
+
+/* .btn:active { */
+/* opacity: 0.4; */
+/* } */
+
+.btn1 {
+    /* background-color: green; */
+    border-radius: 200px 10px 0px;
+    box-shadow: 6px 6px 28px green;
+}
+
+.btn2 {
+    /* background-color: yellow; */
+    border-radius: 10px 200px 10px 0px;
+    box-shadow: 6px 6px 28px yellow;
+}
+
+.btn3 {
+    border-radius: 10px 0px 10px 200px;
+    /* background-color: red; */
+    box-shadow: 6px 6px 28px red;
+}
+
+.btn4 {
+    /* background-color: blue; */
+    border-radius: 0px 10px 200px 10px;
+    box-shadow: 6px 6px 28px blue;
+}
+
+/* .btn1:hover {
+    box-shadow: 6px 6px 28px green;
+}
+
+.btn2:hover {
+    box-shadow: 6px 6px 28px yellow;
+}
+
+.btn3:hover {
+    box-shadow: 6px 6px 28px red;
+}
+
+.btn4:hover {
+    box-shadow: 6px 6px 28px blue;
+}*/
+
+.play {
+    height: 80px;
+    width: 80px;
+    margin: 10.8rem;
+    margin-left: -40px;
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    border: 1px solid white;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.play:active {
+    /* opacity: 0.6; */
+    transition: 2ms;
+    background-color: white;
+    color: blue;
+}
+
+.gameflash {
+    background-color: white;
+}
+
+.userflash {
+    /* background-color: pink; */
+    opacity: 0.4;
+}

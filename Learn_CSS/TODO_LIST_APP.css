@@ -1,0 +1,24 @@
+body {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+#btn {
+    height: 3rem;
+    width: 6rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+
+#input {
+    height: 50px;
+    width: 500px;
+    font-size: 20px;
+    font-family: sans-serif;
+    border: 2px solid red;
+    border-radius: 5px;
+}

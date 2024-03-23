@@ -1,0 +1,74 @@
+#outer{
+    height: 200px;
+    width: 75px;
+    border: 2px solid black;
+}
+.inner{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 50%;
+}
+#red{
+    background-color: red;
+}
+#yellow{
+    background-color: yellow;
+}
+#green{
+    background-color: green;
+}
+/* Only testing purpose--- */
+/* span{
+    border: 2px solid black;
+    height: 100px; //Not working
+    width: 200px;  //Not working
+    padding: 50px; //only L & R
+    margin: 20px;  //only L & R
+} */
+.inline-block{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(183, 243, 124);
+    border: 2px solid black;
+    margin: 5px;
+    display: inline-block;
+    /* display: none; */
+}
+#second{
+    /* display: none; */
+}
+.parent {
+    height: 400px;
+    width: 400px;
+    background-color: rgb(206, 130, 75);
+    margin-left: 36%;
+    border: 5px dotted black;
+    font-size: 10px;
+}
+.child{
+    height: 100px;
+    width: 100px;
+    background-color: violet;
+    margin-left: 36%;
+    border: 3px black solid;
+    font-size: 2em;
+}
+button{
+    font-size: 50px;
+    border-radius: 15px;
+    border: 5px solid green;
+    /* padding-left: 0.5em; */
+    padding-right: 1em;
+    padding-left: 1em;
+}
+/* -------em V/S rem------ */
+section{
+    font-size: 15px;
+}
+div{
+    font-size: 2em;
+    /* font-size: 2rem; */
+    /* font-size: 0.5em; */
+}

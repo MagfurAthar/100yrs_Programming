@@ -1,0 +1,83 @@
+/* h3{
+    background-color: bisque !important;
+} */
+h1, h3{
+    color: #b92b27;
+}
+#signup{
+    background-color: #b92b27;
+    color: white;
+}
+.upvote{
+    background-color: green;
+    color: aliceblue;
+}
+/* Decendent selector */
+.post a{
+    color: purple;
+    background-color: yellow;
+}
+nav ul li{
+    color: palevioletred;
+}
+p+h3{
+    text-decoration: underline;
+}
+.upvote+button{
+    background-color: rgb(34, 248, 255);
+    color: blue;
+}
+div > input{
+    color: black;
+    background-color: rgb(242, 215, 215);
+}
+input[type="text"]{
+    color: rgb(0, 222, 0);
+}
+input[type="password"]{
+    color: red;
+}
+input[type]{
+    background-color: ghostwhite;
+}
+div[id="myID"] p{
+    color: green;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+h3:hover{
+    text-decoration: overline;
+    color: green;
+}
+button:active{
+    background-color: rgb(131, 91, 91);
+    border-radius: 5px;
+    border-style: dotted;
+}
+input[type="radio"]:checked+label{
+    color: green;
+}
+/* .post:nth-of-type(2){
+    background-color: coral;
+} */
+div:nth-of-type(2n){
+    background-color: chocolate;
+}
+h1::first-letter{
+    color: black;
+}
+#Arabic::first-line{
+    color: red;
+}
+p::selection{
+    background-color: yellow;
+    color: red;
+}
+h3{
+    background-color: green;
+}
+h3{
+    background-color: red;
+}
