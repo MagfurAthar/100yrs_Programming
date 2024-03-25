@@ -87,21 +87,24 @@ function SaveDB(data) {
 
 // right syntax of promise chaining-----------------
 SaveDB("My call 1")
-    .then(() => {
+    .then((result) => {
         console.log("Promise1 resolved");
+        console.log("Result of Promise : ", result);
         return SaveDB("My call 2");
     })
-    .then(() => {
+    .then((result) => {
         console.log("Promise2 resolved");
+        console.log("Result of Promise : ", result);
         return SaveDB("My call 3");
     })
-    .then(() => {
+    .then((result) => {
         console.log("Promise3 resolved");
+        console.log("Result of Promise : ", result);
     })
-    .catch(() => {
+    .catch((error) => {
         console.log("Promise was rejected");
-
-    })
+        console.log("Error of Promise : ", error);
+    });
 
 
 
