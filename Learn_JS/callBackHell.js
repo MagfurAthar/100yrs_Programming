@@ -29,22 +29,22 @@ function changeColor(color, delay) {
     })
 }
 
-changeColor("Red", 2000)
-    .then(() => {
-        console.log("Color was changed to red");
-        return changeColor("Yellow", 2000);
-    })
-    .then(() => {
-        console.log("Color was changed to yellow");
-        return changeColor("Green", 2000);
-    })
-    .then(() => {
-        console.log("Color was changed to green");
-        return changeColor("Blue", 2000);
-    })
-    .then(() => {
-        console.log("Color was changed to blue");
-    });
+// changeColor("Red", 2000)
+//     .then(() => {
+//         console.log("Color was changed to red");
+//         return changeColor("Yellow", 2000);
+//     })
+//     .then(() => {
+//         console.log("Color was changed to yellow");
+//         return changeColor("Green", 2000);
+//     })
+//     .then(() => {
+//         console.log("Color was changed to green");
+//         return changeColor("Blue", 2000);
+//     })
+//     .then(() => {
+//         console.log("Color was changed to blue");
+//     });
 // .catch(()=>{
 //     console.log("Color was changed to blue");
 
@@ -52,3 +52,16 @@ changeColor("Red", 2000)
 // ----------------------------Note:-----------------------------
 // since the above code will not be rejected in general.
 // so we can ignore the decalaration of .catch() block----------
+
+
+
+
+// Using 'await' keyword-------------------
+async function demo() { // 'await' keyword can only be used under the async functions.
+    await changeColor("red", 2000);
+    await changeColor("yellow", 2000);
+    await changeColor("green", 2000);
+    changeColor("Blue", 2000);
+};
+
+demo();
