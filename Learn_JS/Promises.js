@@ -39,6 +39,7 @@ function SaveDB(data) {
         let InternetSpeed = Math.floor(Math.random() * 10) + 1;
         if (InternetSpeed > 4) {
             resolve("Succes : Data was saved");
+            // console.log(data);
         } else {
             reject("Failure : Week Connection...");
         }
@@ -47,3 +48,61 @@ function SaveDB(data) {
 }
 
 // SaveDB("Hello");
+// let request = SaveDB("My Phone..") // request = Promise object
+// request
+//     .then(() => {
+//         console.log("promise was resolved");
+//         console.log(request);
+//     })
+//     .catch(() => {
+//         console.log("promise was rejected");
+//         console.log(request);
+//     });
+
+// or simply ---------------------
+// SaveDB("My call..")
+//     .then(() => {
+//         console.log("promise was resolved");
+//     })
+//     .catch(() => {
+//         console.log("promise was rejected");
+//     });
+
+
+// Promises chaining---------------------------------
+// example---------------
+// SaveDB("My call..")
+//     .then(() => {
+//         console.log("Data1 saved");
+//         SaveDB("Hello check").then(() => {
+//             console.log("Data2 saved");
+//             SaveDB("Bye Bye").then(() => {
+//                 console.log("Data3 saved");
+//             })
+//         })
+//     })
+//     .catch(() => {
+//         console.log("promise was rejected");
+//     });
+
+// right syntax of promise chaining-----------------
+SaveDB("My call 1")
+    .then(() => {
+        console.log("Promise1 resolved");
+        return SaveDB("My call 2");
+    })
+    .then(() => {
+        console.log("Promise2 resolved");
+        return SaveDB("My call 3");
+    })
+    .then(() => {
+        console.log("Promise3 resolved");
+    })
+    .catch(() => {
+        console.log("Promise was rejected");
+
+    })
+
+
+
+
