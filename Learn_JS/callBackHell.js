@@ -22,7 +22,12 @@ h1 = document.querySelector("h1");
 function changeColor(color, delay) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
+            let num = Math.floor(Math.random() * 5) + 1;
+            if (num > 3) {
+                reject("Opps! Promise rejected...");
+            }
             h1.style.color = color;
+            console.log(`Color changed to ${color}`);
             resolve("Color changed");
             // if (nextColor) nextColor();
         }, delay);
@@ -58,10 +63,15 @@ function changeColor(color, delay) {
 
 // Using 'await' keyword-------------------
 async function demo() { // 'await' keyword can only be used under the async functions.
-    await changeColor("red", 2000);
-    await changeColor("yellow", 2000);
-    await changeColor("green", 2000);
-    changeColor("Blue", 2000);
+    try {               // For Handling Rejections "try{} catch{} block" comes in use.
+        await changeColor("red", 2000);
+        await changeColor("yellow", 2000);
+        await changeColor("green", 2000);
+        changeColor("Blue", 2000);
+    } catch (error) {
+        console.log("Error catched!");
+        console.log(error);
+    }
 };
 
 demo();
