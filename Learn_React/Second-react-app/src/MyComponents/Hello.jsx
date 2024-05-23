@@ -7,7 +7,7 @@ export function Hello() {
       Herzal
       <br />
       Telegram - Message No.({number}) : 221b SHERELOCK HOLMES Consulting
-      Detective (1881-1904) : petruchio
+      Detective (1881-1904) : Petruchio
       <br />
       Telegram - Message No.({number}) : Payitaht Sultan abdul Hamid Khan's
       today's Speach in Anatolia !! : French Ambassador
