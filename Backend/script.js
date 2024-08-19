@@ -5,7 +5,7 @@
 // }
 // console.log("Bye Bye Nodejs");
 
-console.log(process.argv);
+// console.log(process.argv);
 
 let args = process.argv;
 for (let i = 0; i < args.length; i++) {

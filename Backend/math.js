@@ -1,6 +1,6 @@
 // module.exports.sum = (a, b) => a + b;
 const mul = (a, b) => a * b;
-exports.PI = 3.14;
+// exports.PI = 3.14;
 const g = 9.8;
 
 let obj = {
@@ -9,8 +9,8 @@ let obj = {
     // PI: PI,
     g: g
 }
-module.exports = obj;
-// module.exports = 123;
+// module.exports = obj;
+module.exports = 123;
 
 // or---------------------------------------
 // module.exports = {
