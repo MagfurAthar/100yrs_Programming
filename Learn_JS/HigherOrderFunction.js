@@ -1,11 +1,12 @@
-let multipleGreet = function(func, count){ // Higher Order Function---
-    for(let i=0; i<count; i++){
+let multipleGreet = function (func, count) { // Higher Order Function---
+    for (let i = 0; i < count; i++) {
         func();
     }
 }
-
-let Greet = function(){
-   console.log(`The Great Otoman Ampire.`); 
+let count = 1;
+let Greet = function () {
+    console.log(`${count}) The Great Otoman Ampire.`);
+    count++;
 }
 
 multipleGreet(Greet, 20);

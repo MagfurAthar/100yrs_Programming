@@ -1,10 +1,10 @@
 let age = prompt("Enter your age : ");
 
 // Function declaration-----------
-function isAdult(){
-    if(age >= 18){
+function isAdult() {
+    if (age >= 18) {
         console.log(`You are eligible for vote.`);
-    }else{
+    } else {
         console.log(`You are not eligible for vote.`);
     }
 }

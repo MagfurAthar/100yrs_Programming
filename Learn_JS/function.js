@@ -16,8 +16,8 @@
 // console.log("rVal", rVal);
 
 // ----------------------------------------
-// function sum(a, b){
-//     return a+b;
+// function sum(a, b) {
+//     return a + b;
 //     console.log("Sum of two numbers"); //Unreachable code detected---
 // }
 // let Sum = sum(sum(10, 20), 30);
@@ -27,9 +27,9 @@
 
 // -------String Concatination--------------
 // let str = ["Sahil", "Adeem", "Abbasi"];
-// function concat(str){
+// function concat(str) {
 //     let result = "";
-//     for(let i=0; i<str.length; i++){
+//     for (let i = 0; i < str.length; i++) {
 //         result += str[i];
 //     }
 //     return result;
@@ -37,8 +37,8 @@
 // console.log(concat(str));
 
 // ------Global VS Function variable scope--------
-function scope(a, b){
-    let sum = a+b; //Function scope-----
+function scope(a, b) {
+    let sum = a + b; //Function scope-----
     console.log(sum);
 }
 let sum = 54; //Global variable------

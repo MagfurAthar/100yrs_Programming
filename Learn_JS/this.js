@@ -52,7 +52,7 @@ console.log(mul(2, 7));
 
 // setTimeout function------------------------
 console.log("Hi Everyone!");
-setTimeout(()=>{
+setTimeout(() => {
     console.log(`Barasat.`)
 }, 4000);
 console.log(`Welcome to`);
