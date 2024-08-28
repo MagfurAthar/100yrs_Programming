@@ -2,7 +2,7 @@ let gameSeq = [];
 let userSeq = [];
 let scores = [];
 let highScore = 0;
-let highest = 0;
+let highest = Number(localStorage.getItem('highScore')) || 0;
 let started = false;
 let level = 0;
 let btns = ["btn1", "btn2", "btn3", "btn4"];
@@ -40,7 +40,7 @@ function levelUp() {
     level++;
     h3.innerText = `Level ${level}`;
 
-    let randIndx = Math.floor(Math.random() * 3);
+    let randIndx = Math.floor(Math.random() * 4);
     let randColor = btns[randIndx];
     let randBtn = document.querySelector(`.${randColor}`);
     console.log(randIndx);
@@ -60,10 +60,11 @@ function checkAns(indx) {
     } else {
         scores.push(level);
         highScore = Math.max(...scores);
-        if (level > highScore) {
-            localStorage.getItem("highScore", highScore);
+        if (level > highest) {
+            highest = level;
+            localStorage.setItem("highScore", String(level));
         } else {
-            highest = localStorage.setItem("highScore", highScore);
+            highest = localStorage.getItem("highScore");
         }
         h3.innerHTML = `Game over! <br>Your score : ${level}<br>High score : ${highest}<br>Press <i>Play</i> button to restart`;
         document.querySelector('body').style.backgroundColor = "red";
