@@ -3,12 +3,12 @@ using namespace std;
 int main(){
 
 //      Bitwise operator-------------------    
-    // int a = 4;
-    // int b = 6;
-    // cout<<" a&b : "<<(a&b)<<endl;
-    // cout<<" a|b : "<<(a|b)<<endl;
-    // cout<<" ~a : "<<(~a)<<endl;
-    // cout<<" a^b : "<<(a^b)<<endl;
+    int a = 4;
+    int b = 6;
+    cout<<" a&b : "<<(a&b)<<endl;
+    cout<<" a|b : "<<(a|b)<<endl;
+    cout<<" ~a : "<<(~a)<<endl;
+    cout<<" a^b : "<<(a^b)<<endl;
 
 //      Left shift & Right shift-----------
     // cout<<(17>>1)<<endl;
@@ -97,7 +97,7 @@ int main(){
         // cout<<a<<endl;
         //  if (true)
         //  {
-                // int b=4;
+        //         int b=4;
         //     int a=5;
         //     cout<<a<<endl;
         //  }

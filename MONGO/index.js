@@ -37,23 +37,76 @@ const userSchema = new mongoose.Schema({
 });
 
 // const User = mongoose.model("User", userSchema);
-const Employee = mongoose.model("Employee", userSchema);
+const Employee = mongoose.model("Employee", userSchema); //swet here which schema you want to use
 
-Employee.find({ age: { $gt: 23 } })  // $gt is a query operator uaed to find the data greater than 23
-  .then((data) => console.log(data))
-  .catch((err) => console.log(err));
 
-// ----------------------------------------
-  // Employee.findById("67e069d88d3be86f7d8e2c10") // find the data by id
+// Read Operations-------------------------------------------------------
+// Employee.find({ age: { $gt: 23 } }) // $gt is a query operator uaed to find the data greater than 23
+  // .then((data) => console.log(data))
+  // .catch((err) => console.log(err));
+// 
+// ------------------------------------------------------
+// Employee.findById("67e069d88d3be86f7d8e2c10") // find the data by id
+// .then((data) => {
+// console.log(data);
+// })
+// .catch((err) => {
+// console.log(err);
+// }
+// );
+
+// Update Operations-------------------------------------------------------
+// Employee.updateOne({ name: "John" }, { age: 30 }) // update the age by name
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+// Employee.updateMany({ age: {$gt: 25} }, { age: 30 }) // update the age by age limit condition
+// .then((data) => {
+// console.log(data);
+// })
+// .catch((err) => {
+// console.log(err);
+// });
+
+// Employee.findOneAndUpdate({ age: { $gt: 25 } }, { age: 50 }, {new: true}) // update the age by age limit condition
   // .then((data) => {
     // console.log(data);
   // })
   // .catch((err) => {
     // console.log(err);
-  // }
-  // );
-// ---------------------------------------
+  // });
 
+
+
+// Delete Operations----------------------------------------------------------------
+// Employee.deleteOne({ name: "John" }) // delete the data by name
+  // .then((data) => {
+    // console.log(data);
+  // })
+  // .catch((err) => {
+    // console.log(err);
+  // });
+
+// Employee.deleteMany({ age: { $gt: 25 } }) // delete the data by age limit condition
+  // .then((data) => {
+    // console.log(data);
+  // })
+  // .catch((err) => {
+    // console.log(err);
+  // });
+
+
+// Employee.findByIdAndDelete("67e069d88d3be86f7d8e2c10") // delete the data by id
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
 
 
 
