@@ -4,26 +4,23 @@ const app = express();
 const Chat = require("./models/chat.js");
 const Path = require("path");
 
-
 app.set("views", Path.join(__dirname, "views"));
 app.set("view engine", "ejs");
+app.use(express.static(Path.join(__dirname, "public")));
 
+// let chat1 = new Chat({
+//     from: "Alice",
+//     to: "Bob",
+//     message: "Hello Bob!",
+//     created_at: new Date(),
+//   });
 
-let chat1 = new Chat({
-    from: "Alice",
-    to: "Bob",
-    message: "Hello Bob!",
-    created_at: new Date(),
-  });
-
-  chat1.save().then((res) => {
-    console.log("Chat saved successfully", res);
-  }
-  ).catch((err) => {
-    console.log("Error saving chat:", err);
-  });
-
-
+//   chat1.save().then((res) => {
+//     console.log("Chat saved successfully", res);
+//   }
+//   ).catch((err) => {
+//     console.log("Error saving chat:", err);
+//   });
 
 main()
   .then(() => {
@@ -42,6 +39,10 @@ app.listen(8080, () => {
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
-app.get("/about", (req, res) => {
-  res.send("About Page");
+
+app.get("/chats", async (req, res) => {
+  let chats = await Chat.find();
+  // console.log(chats);
+  // res.json(chats);
+  res.render("index.ejs", { chats });
 });

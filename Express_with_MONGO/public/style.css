@@ -1,0 +1,16 @@
+.sender{
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    max-width: 10%;
+    position: relative;
+}
+.msg{
+    font-style: italic;
+    background-color: #294763;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
