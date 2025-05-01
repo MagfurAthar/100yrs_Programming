@@ -12,5 +12,42 @@
     color: white;
     padding: 10px;
     border-radius: 5px;
+    max-width: 20%;
 }
-
+.btn{
+    background-color: #294763;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.date{
+    display: flex;
+    /* justify-content: flex-start; */
+    gap: 10px; 
+    font-size: 14px;
+    color: #294763; 
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    margin-top: -115px;
+    margin-left: 92%;
+    max-width: 7%;
+}
+.time {
+    display: flex;
+    /* justify-content: flex-end; */
+    gap: 10px; 
+    font-size: 14px;
+    color: #294763; 
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    margin-top: 10px;
+    margin-left: 92%;
+    max-width: 7%;
+    margin-bottom: 20px;
+}

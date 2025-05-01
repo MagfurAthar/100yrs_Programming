@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .popup button {
+            margin: 5px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .popup button:first-child {
+            background-color: #ff4d4d;
+            color: white;
+        }
+        .popup button:last-child {
+            background-color: #4d94ff;
+            color: white;
+        }
+        .popup button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="popup">
+            <button>Cancel</button>
+            <button>Confirm</button>
+        </div>
+    </form>
+</body>
+</html>
